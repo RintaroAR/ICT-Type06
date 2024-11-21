@@ -56,7 +56,7 @@
             function rotateModel() {
                 if (rotating) {
                     const rotation = model.getAttribute('rotation');
-                    rotation.x += rotationSpeed; // X軸を中心に回転
+                    rotation.y += rotationSpeed; // Y軸を中心に回転
                     model.setAttribute('rotation', rotation);
                 }
                 requestAnimationFrame(rotateModel); // 次のフレームで再び呼び出す
